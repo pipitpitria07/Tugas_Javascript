@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tugas1 JavaScript Pipit Pitria</title>
+    </head>
+    <body>
+        <script>
+          //deklarasi & inisialisasi variabel
+            const pelanggan = "Siti Aminah";
+            const produk = "TV";
+            const jumlahBeli = 3;
+            let hargaSatuan;
+          //menentukan harga satuan produk 
+            if (produk === "TV") {
+                hargaSatuan = 3000000;
+            } else if (produk === "Kulkas") {
+                hargaSatuan = 4000000;
+            } else if (produk === "Mesin Cuci") {
+                hargaSatuan = 5000000;
+            } 
+          //menghitung harga kotor
+            const hargaKotor = hargaSatuan * jumlahBeli;
+          //menghitung diskon
+            const diskon = produk === "TV" && jumlahBeli > 2 ? 0.25 * hargaKotor : 0.1 * hargaKotor;
+          //menghitung PPN
+            const ppn = 0.11 * (hargaKotor - diskon);
+          //menghitung sub total
+            const hargaBayar = hargaKotor - diskon + ppn;
+          //cetak
+            document.write("Pelanggan: " + pelanggan + "<br>");
+            document.write("Produk: " + produk + "<br>");
+            document.write("Jumlah Beli: " + jumlahBeli + "<br>");
+            document.write("Harga Satuan: " + hargaSatuan + "<br>");
+            document.write("Harga Kotor: " + hargaKotor + "<br>");
+            document.write("Diskon: " + diskon + "<br>");
+            document.write("PPN: " + ppn + "<br>");
+            document.write("Harga Bayar: " + hargaBayar + "<br>");
+        </script>
+    </body>
+</html>
