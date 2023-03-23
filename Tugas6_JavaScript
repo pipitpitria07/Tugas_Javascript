@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tugas6 Javascript</title>
+    </head>
+    <body>
+        <script>
+            //-------------------membuat class--------------------------
+            class Gempa{
+                //konstruktor
+                constructor(lokasi, sekala){
+                    this.lokasi = lokasi;
+                    this.sekala = sekala;
+                   
+                }
+                //dampak gempa
+                dampak(){
+                    if (this.skala <= 2) {
+						return "Gempa tidak terasa";
+					} else if (this.skala <= 4) {
+						return "Bangunan retak-retak";
+					} else if (this.skala <= 6) {
+						return "Bangunan roboh";
+					} else {
+						return "Selain bangunan roboh & berpotensi tsunami";
+					}
+                }
+                    
+                cetak(){
+                document.write(`<br/>lokasi: ${this.lokasi}
+                <br/>sekala: ${this.sekala} <hr/>`);
+                }      
+            
+            }
+
+                
+            
+                
+            //--------------------membuat object----------------------
+            //buat instance object
+            let l1 = new gempa('banten', 2.5);
+            let l2 = new gempa('aceh', 7.0);
+            let l3 = new gempa('palu', 4.5);
+            let l4 = new gempa('cianjur', 5.5);
+            let l5 = new gempa('sulawesi', 5.3);
+            let l6 = new gempa('garut', 3.0);
+            let l7 = new gempa('manado', 6.0);
+            let l8 = new gempa('sumatra', 4.3);
+            //gunakan fungsi dalam class
+            l1.lokasi(); l1.sekala();
+            l2.lokasi(); l2.sekala();
+            l3.lokasi(); l3.sekala();
+            l4.lokasi(); l4.sekala();
+            l5.lokasi(); l5.sekala();
+            l6.lokasi(); l6.sekala();
+            l7.lokasi(); l7.sekala();
+            l8.lokasi(); l8.sekala();
+
+            l1.cetak(); l1.cetak();
+            l2.cetak(); l2.cetak();
+            l3.cetak(); l3.cetak();
+            l4.cetak(); l4.cetak();
+            l5.cetak(); l5.cetak();
+            l6.cetak(); l6.cetak();
+            l7.cetak(); l7.cetak();
+            l8.cetak(); l8.cetak();
+                            
+        </script>
+    </body>
+</html>
