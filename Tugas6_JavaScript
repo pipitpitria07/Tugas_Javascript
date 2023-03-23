@@ -5,7 +5,7 @@
     </head>
     <body>
         <script>
-            //-------------------membuat class--------------------------
+            // membuat class
             class Gempa{
                 //konstruktor
                 constructor(lokasi, sekala){
@@ -33,8 +33,7 @@
                 
             
                 
-            //--------------------membuat object----------------------
-            //buat instance object
+            //membuat object
             let l1 = new Gempa("Banten", 2.5);
             let l2 = new Gempa("Aceh", 7.0);
             let l3 = new Gempa("Palu", 4.5);
@@ -43,7 +42,8 @@
             let l6 = new Gempa("garut", 3.0);
             let l7 = new Gempa("manado", 6.0);
             let l8 = new Gempa("sumatra", 4.3);
-            //gunakan fungsi dalam class
+            
+	    //gunakan fungsi dalam class
             l1.lokasi(); l1.skala();
             l2.lokasi(); l2.skala();
             l3.lokasi(); l3.skala();
