@@ -5,16 +5,16 @@
     </head>
     <body>
         <script>
-            // membuat class
-            class Gempa{
+            //-------------------membuat class--------------------------
+            class Gempa {
                 //konstruktor
-                constructor(lokasi, sekala){
+                constructor(lokasi, sekala) {
                     this.lokasi = lokasi;
                     this.sekala = sekala;
                    
                 }
                 //dampak gempa
-                dampak(){
+                dampak() {
                     if (this.skala <= 2) {
 						return "Gempa tidak terasa";
 					} else if (this.skala <= 4) {
@@ -33,17 +33,17 @@
                 
             
                 
-            //membuat object
+            //--------------------membuat object----------------------
+            //buat instance object
             let l1 = new Gempa("Banten", 2.5);
             let l2 = new Gempa("Aceh", 7.0);
             let l3 = new Gempa("Palu", 4.5);
             let l4 = new Gempa("Cianjur", 5.5);
-            let l5 = new Gempa("sulawesi", 5.3);
-            let l6 = new Gempa("garut", 3.0);
-            let l7 = new Gempa("manado", 6.0);
-            let l8 = new Gempa("sumatra", 4.3);
-            
-	    //gunakan fungsi dalam class
+            let l5 = new Gempa("Sulawesi", 5.3);
+            let l6 = new Gempa("Garut", 3.0);
+            let l7 = new Gempa("Manado", 6.0);
+            let l8 = new Gempa("Sumatra", 4.3);
+            //gunakan fungsi dalam class
             l1.lokasi(); l1.skala();
             l2.lokasi(); l2.skala();
             l3.lokasi(); l3.skala();
