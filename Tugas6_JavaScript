@@ -26,10 +26,7 @@
 					}
                 }
                     
-                cetak(){
-                document.write(`<br/>lokasi: ${this.lokasi}
-                <br/>sekala: ${this.sekala} <hr/>`);
-                }      
+                  
             
             }
 
@@ -38,23 +35,23 @@
                 
             //--------------------membuat object----------------------
             //buat instance object
-            let l1 = new gempa('banten', 2.5);
-            let l2 = new gempa('aceh', 7.0);
-            let l3 = new gempa('palu', 4.5);
-            let l4 = new gempa('cianjur', 5.5);
-            let l5 = new gempa('sulawesi', 5.3);
-            let l6 = new gempa('garut', 3.0);
-            let l7 = new gempa('manado', 6.0);
-            let l8 = new gempa('sumatra', 4.3);
+            let l1 = new Gempa("Banten", 2.5);
+            let l2 = new Gempa("Aceh", 7.0);
+            let l3 = new Gempa("Palu", 4.5);
+            let l4 = new Gempa("Cianjur", 5.5);
+            let l5 = new Gempa("sulawesi", 5.3);
+            let l6 = new Gempa("garut", 3.0);
+            let l7 = new Gempa("manado", 6.0);
+            let l8 = new Gempa("sumatra", 4.3);
             //gunakan fungsi dalam class
-            l1.lokasi(); l1.sekala();
-            l2.lokasi(); l2.sekala();
-            l3.lokasi(); l3.sekala();
-            l4.lokasi(); l4.sekala();
-            l5.lokasi(); l5.sekala();
-            l6.lokasi(); l6.sekala();
-            l7.lokasi(); l7.sekala();
-            l8.lokasi(); l8.sekala();
+            l1.lokasi(); l1.skala();
+            l2.lokasi(); l2.skala();
+            l3.lokasi(); l3.skala();
+            l4.lokasi(); l4.skala();
+            l5.lokasi(); l5.skala();
+            l6.lokasi(); l6.skala();
+            l7.lokasi(); l7.skala();
+            l8.lokasi(); l8.skala();
 
             l1.cetak(); l1.cetak();
             l2.cetak(); l2.cetak();
