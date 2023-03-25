@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tugas3 JavaScript Menghitung Gaji Karyawan</title>
+    </head>
+    <body>
+        <script>
+            let p1 = {'nip':'111', 'nama':'Budi', 'jabatan':'Manager', 'divisi':'HRD','agama':'Islam'};
+            let p2 = {'nip':'112', 'nama':'I Gede', 'jabatan':'Asisten Manager', 'divisi':'HRD','agama':'Hindu'};
+            let p3 = {'nip':'113', 'nama':'Jhon', 'jabatan':'Asisten Manager', 'divisi':'Keuangan','agama':'Kristen'};
+            let p4 = {'nip':'114', 'nama':'Siti', 'jabatan':'Supervisor', 'divisi':'Marketing','agama':'Islam'};
+            let p5 = {'nip':'115', 'nama':'Andi', 'jabatan':'Staff', 'divisi':'Operasional','agama':'Islam'};
+            let p6 = {'nip':'116', 'nama':'Dewi', 'jabatan':'Staff', 'divisi':'Operasional','agama':'Budha'};
+            let p7 = {'nip':'117', 'nama':'Dini', 'jabatan':'Staff', 'divisi':'Operasional','agama':'Kristen'};
+            let pegawai = [p1,p2,p3,p4,p5,p6,p7]; //array of object
+
+             //menghitung Tentukan Gaji Pokok berdasarkan jabatan menggunakan switch case
+            function hitungGaji(jabatan) {
+                let gaji = 0;
+                switch (jabatan) {
+                    case "Manager":
+                        gaji = 15000000;
+                        break;
+                    case "Asisten Manager":
+                        gaji = 10000000;
+                        break;
+                    case "Supervisor":
+                        gaji = 7000000;
+                        break;
+                    case "Staff":
+                        gaji = 3000000;
+                        break;
+                }
+                 return gaji;
+            }
+
+            //menghitung tunjangan jabatan
+            function hitungTunjangan(gajiPokok) {
+                return gajiPokok * 0.30;
+            }
+
+            // menghitung asuransi kesehatan
+            function hitungAsuransi(gajiPokok) {
+                 return gajiPokok * 0.10;
+             }
+
+            //menghitung zakat profesi
+            function hitungZakat(gajiKotor, agama) {
+                let zakat = 0;
+            if (gajiKotor >= 7000000 && agama.toLowerCase() === "Islam") {
+            zakat = gajiKotor * 0.025;
+            }
+                return zakat;
+            }
+      
+            //menghitung take home pay
+             function hitungTakeHomePay(gajiKotor, zakatProfesi) {
+                 return gajiKotor - zakatProfesi;
+            }
+
+            //cetak
+            document.write() {
+                <table>
+                    <tr>
+                        <th>NIP</th>
+                        <th>Nama</th>
+                        <th>Jabatan</th>
+                        <th>Divisi</th>
+                        <th>Gaji Pokok</th>
+                        <th>Tunjangan Jabatan</th>
+                        <th>Asuransi Kesehatan</th>
+                        <th>Gaji Kotor</th>
+                        <th>Agama</th>
+                        <th>Zakat Profesi</th>
+                        <th>Take Home Pay</th>
+                    </tr>
+                 </table>
+            }
+                   
+
+            
+        </script>
+    </body>
+</html>
