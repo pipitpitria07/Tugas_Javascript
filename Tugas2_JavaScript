@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title> Form Registration </title>
+        <link rel="stylesheet" href="Tugas_JavaScript.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container">
+            <div class="title"> Create a new account </div>
+                <form action="#">
+                    <div class="user-details">
+                        <div class="input-box">
+                            <span class="details">First Name</span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">SubName</span>
+                            <input type="text" placeholder="" required>
+                         <div class="input-box">
+                            <span class="details">Mobile number of email <address></address></span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="input-box">
+                            <span class="details">New Password</span>
+                            <input type="text" placeholder="" required>
+                        </div>
+                        <div class="formbox">
+                            <div class="bday">Date For Birthday?</div>
+                        </div>
+                        <select name="" id="">
+                            <option value="">Tanggal</option>
+                            <script>
+                                var i = 1;
+                                for(i;i<=31;i++){
+                                    document.write("<option>" + i + "</option>");
+                                }
+                            </script>
+                        </select>
+                        <select name="" id="">
+                                <option value="">Bulan</option>
+                                <script>
+                                    var bulan = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"];
+                                    for(i=0;i<=11;i++){
+                                        document.write("<option>" + bulan [i] + "</option>");
+                                    }
+                                </script>
+                        </select>
+                        <select name="" id="">
+                                <option value="">Tahun</option>
+                                <script>
+                                    var tahun = 1905
+                                    for(i=2023;i>=tahun;i--){
+                                        document.write("<option>" + i + "</option>")
+                                    }
+                                </script>
+                        </select>
+                        <div class="formbox mt1">
+                            <div class="gender-details">
+                            <span class="gender-title">Grande?</span>
+                            <div class="category">
+                            <span data-type="radio" class="spanpad">
+                              <input type="radio" id="fem" class="m0">
+                              <label for="fem" class="gender">Laki - Laki
+                              </label>    
+                              <input type="radio" id="fem" class="m0">
+                              <label for="fem" class="gender">Perempuan             
+                              </label>                   
+                            </span>
+                        </div>
+                        <div class="formbox">
+                            <div class="agree">
+                              people who use our service may have uploaded your contact information to facebook. Learn move  
+                            <br/>
+                              By clicking Sign Up, you agree to our Terms, Privacy Polis and Cooking Policy                           
+                            <br/>
+                              you may recive SMS notification form us and can opt out at any time                           
+                        </div>
+                        <div>
+                            <div class="d-gird gap-3 col-6 mx-auto">
+                                <bootem type="submit" class="btn btn-frimary">Sign Up</bootem>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
