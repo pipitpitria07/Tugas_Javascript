@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Tugas6 JavaScript</title>
+    </head>
+    <body>
+        <script>
+            //membuat class
+            class Gempa {
+                //konstruktor
+                constructor(lokasi, skala) {
+                    this.lokasi = lokasi;
+                    this.skala = skala;
+                    
+                   
+                }
+                //dampak gempa
+                dampak() {
+                    if (this.skala <= 2) {
+						return "Gempa tidak terasa";
+					} else if (this.skala <= 4) {
+						return "Bangunan retak-retak";
+					} else if (this.skala <= 6) {
+						return "Bangunan roboh";
+					} else {
+						return "Selain bangunan roboh & berpotensi tsunami";
+					}
+                }
+                infogempa(){
+                    document.write(`
+                        <br/>${this.lokasi}  
+                        <br/>${this.skala}
+                        <br/>${this.dampak()} <hr/>`);
+
+                }
+                
+            
+                
+            }
+
+                
+            
+                
+            // membuat 8 0bject gempa
+            let l1 = new Gempa("Banten", 2.5);
+            let l2 = new Gempa("Aceh", 7.5);
+            let l3 = new Gempa("Palu", 4.5);
+            let l4 = new Gempa("Cianjur", 5.5);
+            let l5 = new Gempa("Sulawesi", 5.3);
+            let l6 = new Gempa("Garut", 3.8);
+            let l7 = new Gempa("Manado", 6.7);
+            let l8 = new Gempa("Sumatra", 4.3);
+           
+
+            l1.infogempa();
+            l2.infogempa();
+            l3.infogempa();
+            l4.infogempa();
+            l5.infogempa();
+            l6.infogempa();
+            l7.infogempa();
+            l8.infogempa();
+            
+            
+                            
+        </script>
+    </body>
+</html>
